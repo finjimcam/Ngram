@@ -1,0 +1,51 @@
+Nonogram progress
+
+[Initial Thoughts]
+
+use django to create a webapp that creates a coloured nonogram from an image for mums birthday
+have the ability to upload an image 
+pixelate image so it fill fit into grid size (adjustable grid size???)
+CMYBW - turn image into closest combination of 2 colours (W is background)                             
+4+3+2+1+1 (11) colours (flipped permutation is the same)
+4c2 +5
+CC: Cyan
+CM: Blue
+CY: Green
+CB: Dark Cyan
+MM: Magenta
+MY: Red
+MB: Dark Magenta
+YY: Yellow
+YB: Dark Yellow
+BB: Black
+W: White
+
+split into layers and calculate nonogram for each layer and combine?
+[27/06/2024]
+
+[255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255 255 255   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255 255   0   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255 255   0   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255   0   0   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255   0   0   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255   0   0   0   0 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255   0   0   0   0 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255   0   0   0   0 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255   0   0   0   0 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255   0   0   0   0   0   0 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255   0   0   0   0   0 255 255   0   0 255 255 255 255 255 255]
+[255 255 255 255 255 255 255   0   0   0   0 255 255 255 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255   0   0 255 255 255 255 255 255 255 255 255 255 255 255 255 255]
+[255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255]
+
+Issues Encountered
+Clues Not Aligning: The current clue setup doesn't seem to provide a clear path to solve the entire puzzle. Adjustments might be needed to better align clues with the grid progress.
+
+Next Steps
+Iterative Deduction: Continue refining the grid using logical deduction methods.
+Backtracking: Implement backtracking to explore potential solutions if logical deduction stalls.
+
+Goals for Next Session
+Goal: Achieve a partially or fully solved grid.
+Plan: Focus on refining the solving strategy based on the clues provided.
